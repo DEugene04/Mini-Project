@@ -1,0 +1,721 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color:rgb(37, 37, 37);*/
+}
+
+/* Navigation Bar css */
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(37, 37, 37);
+}
+.navBar { 
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+.logo img{
+  margin-top: -20px;
+  width: 68px;  
+  height: 43.4px;
+  background-color: transparent;
+}
+.navLinks {
+  display: none;
+}
+.contactUs-btn {
+  padding: 10px ;
+  background-color:#f8faad;
+  margin-top: -10px;
+}
+.dropdown{
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ position: absolute;
+ margin-top: 16px;
+}
+.dropdown p{
+  display: none;
+  background-color: rgb(46, 46, 46);
+  padding: 15px 20px;
+  width: 120px;
+  gap: 30px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.dropdown p:hover{
+  background-color: rgb(77, 77, 77);
+}
+i.fa-bars{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+i.fa-bars:hover .dropdown p{
+  display: block;
+  justify-content: right;
+  align-items: end;
+  text-align: right;
+}
+/* Landing page css */
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-right: 64px;
+  margin-left: 64px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.landingPage-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  color: white;
+  font-size: 20px;
+}
+
+.landingPage-text h1{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  align-items: center;
+}
+
+#slogan{
+  font-size: 15px;
+}
+
+.landingPage-text button{
+  border-radius: 5px;
+  background-color: #f8faad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  width: 90px;
+  height: 35px;
+  font-weight: 600;
+  font-size: 10px;
+  cursor: pointer;
+}
+.landingPage-text button:hover{
+  width: 240px;
+  height: 66px;
+  margin-top: 18px;
+  font-size: larger;
+  background-color: #dcdf9a;
+}
+
+.landingPage-text h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.landingPage-picture img{
+  display: block;
+  width: 180px;
+  height: 217px;
+  background-color:
+  transparent;
+}
+
+/* About us */
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.about-us-picture img{
+  margin-top: -30px;
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.about-us{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*width: 500px;*/
+}
+.about-us h1{
+  text-decoration: underline;
+  text-decoration-color: #f8faad ;
+}
+
+.about-us h3{
+  text-align: center;
+  padding: 20px;
+}
+
+/* our service css */
+.our-service-text {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #f8faad;
+  margin-bottom: 40px;
+}
+.boxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 3%;
+  margin-left: 3%;
+  gap: 35px;
+}
+.boxes-1, .boxes-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  border-radius: 40px;
+}
+.service-box {
+  width: 293px;
+  height: 219px;
+  background-color: #f8faad;
+  border: 20px solid #f8faad;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.service-box h2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.service-box h4{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.service-box button {
+  border-radius: 16px;
+  padding: 5px;
+  margin-top: 0px;
+  background-color: #f8faad;
+  outline: none;
+  border: none;
+}
+.service-box img{
+  width: 30px;
+  height: 30px;
+}
+.service-box button:hover {
+  background-color: #e0e29a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* Contact us css */
+.contact-us-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+
+  gap: 32px;
+}
+.contact-us-container h1{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color:#f8faad ;
+}
+.contact-us-content{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+.contact-us-picture img{
+  display: none;
+}
+
+#register-form{
+  background-color: #f8faad;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 300px;
+  padding: 40px;
+}
+
+#register-form div{
+  display: flex;
+  flex-direction: column;
+}
+#register-form div input {
+  border: 1px solid black;
+  margin-top: 8px;
+}
+#register-form div input, #send-btn{
+  padding: 8px;
+  border-radius: 16px;
+}
+#register-form #input-name{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#register-form #first-name, #last-name {
+  width: 200px;
+}
+.error-message{
+  color: red;
+}
+#send-btn {
+  background-color: rgb(37, 37, 37);
+  color: #f8faad;
+}
+#message {
+  height: 100px;
+}
+
+.line {
+  border: none; 
+  border-top: 5px solid #f8faad; 
+  width: 100%;
+  margin-top: 60px;
+}
+
+.connect-with-us {
+  margin: 64px;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.alamat {
+  margin-right: 64px;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+/* media responsive */
+i.fa-bars{
+  color: white;
+}
+
+/*tablet width*/
+@media screen and (min-width: 525px) {
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-right: 64px;
+  margin-left: 64px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.landingPage-text h1{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  align-items: center;
+}
+#slogan{
+  font-size: 18px;
+}
+.landingPage-text button{
+  border-radius: 5px;
+  background-color: #f8faad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  width: 130px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.landingPage-picture img{
+  display: block;
+  width: 284px;
+  height: 342px;
+  background-color:
+  transparent;
+}
+.service-box {
+  width: 400px;
+  height: 300px;
+  background-color: #f8faad;
+  border: 20px solid #f8faad;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 16px;
+}
+.service-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.service-box h4{
+  font-weight: 500;
+}
+.service-box img{
+  width: 60px;
+  height: 60px;
+}
+.service-box button {
+  border-radius: 16px;
+  padding: 5px;
+  margin-top: 0px;
+  background-color: #f8faad;
+  outline: none;
+}
+#register-form{
+  background-color: #f8faad;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+  padding: 40px;
+}
+#register-form #input-name{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+}
+
+
+/*desktop width*/
+@media screen and (min-width: 857px){
+  i.fa-bars{
+    display: none;
+  }
+  .navLinks{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-weight: 600;
+  }
+  .contactUs-btn {
+  padding: 10px ;
+  background-color:#f8faad;
+  margin-top: -10px;
+  font-weight: 600;
+}
+  .landingPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+    margin-right: 150px;
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .landingPage-picture img{
+    display: block;
+    width: 293px;
+    height: 353px;
+    background-color: transparent;
+  }
+  .landingPage-text h1{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  align-items: center;
+}
+#slogan{
+  font-size: 25px;
+}
+.landingPage-text button{
+  border-radius: 5px;
+  background-color: #f8faad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 188px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 17px;
+}
+  .about-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+  .about-us-picture img{
+    margin-top: -30px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+  .about-us{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items:flex-end;
+    width: 500px;
+    gap: 20px;
+    text-align: end;
+  }
+  .about-us h3{
+    text-align: end;
+    padding: 0px;
+  }
+  .boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 248px;
+    margin-left: 248px;
+  }
+  .boxes-1, .boxes-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    border-radius: 40px;
+  }
+  .service-box {
+  width: 400px;
+  height: 300px;
+  background-color: #f8faad;
+  border: 20px solid #f8faad;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 16px;
+}
+.contact-us-picture img{
+  display: none;
+}
+.contact-us-content{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+.service-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.service-box h4{
+  font-weight: 500;
+}
+.service-box button, .service-box img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.service-box img{
+  width: 60px;
+  height: 60px;
+}
+#register-form{
+  background-color: #f8faad;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+  padding: 40px;
+}
+#register-form #input-name{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+}
+
+/* large desktop width*/
+@media screen and (min-width: 1280px) {
+i.fa-bars{
+    display: none;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-weight: 600;
+}
+.contactUs-btn {
+  padding: 10px ;
+  background-color:#f8faad;
+  margin-top: -10px;
+  font-weight: 600;
+}
+.landingPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+    margin-right: 150px;
+    margin-left: 175px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.landingPage-picture img{
+    display: block;
+    width: 293px;
+    height: 353px;
+    background-color: transparent;
+}
+.landingPage-text h1{
+  display: flex;
+  justify-content: center;
+  font-size: 140px;
+  align-items: center;
+}
+#slogan{
+  font-size: 33px;
+}
+.landingPage-text button{
+  border-radius: 5px;
+  background-color: #f8faad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  width: 227px;
+  height: 53px;
+  font-weight: 600;
+  font-size: 20px;
+}
+  .about-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+  .about-us-picture img{
+    margin-top: -30px;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+  .about-us{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items:flex-end;
+    width: 500px;
+    gap: 20px;
+    text-align: end;
+  }
+  .about-us h3{
+    text-align: end;
+    padding: 0px;
+  }
+  .boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 248px;
+    margin-left: 248px;
+  }
+  .boxes-1, .boxes-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    border-radius: 40px;
+  }
+  .service-box {
+  width: 400px;
+  height: 300px;
+  background-color: #f8faad;
+  border: 20px solid #f8faad;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 16px;
+}
+  .contact-us-picture img{
+  display: block;
+  background-color: transparent;
+  margin-top: 140px;
+}
+.contact-us-content{
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+.service-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.service-box h4{
+  font-weight: 500;
+}
+.service-box button, .service-box img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.service-box img{
+  width: 60px;
+  height: 60px;
+}
+#register-form{
+  background-color: #f8faad;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 500px;
+  padding: 40px;
+}
+#register-form #input-name{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+}
